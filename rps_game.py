@@ -24,20 +24,3 @@ elif choice==python_choice:
 else:
     print("python won")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
