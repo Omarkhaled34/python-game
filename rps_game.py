@@ -11,14 +11,12 @@ while True:
     if choice<1 | choice>3:
         sys.exit('you must enter a valid choice')
     python_choice=random.randint(1,3)
-    print('you chose',str(RPS(choice).name))
-    print('python chose',str(RPS(python_choice).name))
-    if choice==1 and python_choice==2:
-        print('you won')
-    elif choice==2 and python_choice==1:
-        print('you won')
-    elif choice==3 and python_choice==2:
-        print('you won')
+    print(f'you chose {RPS(choice).name}')
+    print(f'python chose {RPS(python_choice).name}')
+    if (choice == 1 and python_choice == 3) or \
+       (choice == 2 and python_choice == 1) or \
+       (choice == 3 and python_choice == 2):
+        print('You won!')
     elif choice==python_choice:
         print('tie game')
     else:
@@ -28,3 +26,4 @@ while True:
         continue
     else:
         sys.exit(" you quit the game")
+
